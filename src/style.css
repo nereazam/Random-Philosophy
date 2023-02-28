@@ -1,26 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright&display=swap');
 
+/* estilo padrão */
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
+  background-color: #c1bebe;
 }
 
 .container {
   width: 80%;
   margin: auto;
+  margin-top: 250px;
   text-align: center;
   padding: 20px;
   background-color: #fff;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
   border-radius: 10px;
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 38px;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   color: #333;
   font-family: 'Cormorant Upright', serif;
 }
@@ -31,13 +33,13 @@ h1 {
 
 #quote {
   font-size: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   line-height: 1.5;
   font-family: 'Cormorant Upright', serif;
 }
 
 #quoteBtn {
-  background-color: #2d3954;
+  background-color: #475983;
   color: #fff;
   font-size: 20px;
   padding: 10px 20px;
@@ -49,4 +51,45 @@ h1 {
 
 #quoteBtn:hover {
   background-color: #202b3e;
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 90%;
+    margin-top: 100px;
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: 28px;
+  }
+  
+  #quote {
+    font-size: 20px;
+  }
+  
+  #quoteBtn {
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 479px) {
+  .container {
+    width: 100%;
+    margin-top: 50px;
+    padding: 5px;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  #quote {
+    font-size: 16px;
+  }
+  
+  #quoteBtn {
+    font-size: 14px;
+  }
 }

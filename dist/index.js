@@ -18,8 +18,8 @@ function getRandomQuote() {
 function displayQuote(quote) {
     const quoteEl = document.getElementById("quote");
     quoteEl.innerHTML = `
-    <p><strong>"${quote.source}"</strong></p>
-    <p>- ${quote.quote}, ${quote.philosophy}</p>
+    <p><strong>"${quote.quote}"</strong></p>
+    <p>- ${quote.source}, ${quote.philosophy}</p>
   `;
 }
 const quoteBtn = document.getElementById("quoteBtn");

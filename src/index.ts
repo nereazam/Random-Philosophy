@@ -13,8 +13,8 @@ async function getRandomQuote(): Promise<Quote> {
 function displayQuote(quote: Quote) {
   const quoteEl = document.getElementById("quote");
   quoteEl!.innerHTML = `
-    <p><strong>"${quote.source}"</strong></p>
-    <p>- ${quote.quote}, ${quote.philosophy}</p>
+    <p><strong>"${quote.quote}"</strong></p>
+    <p>- ${quote.source}, ${quote.philosophy}</p>
   `;
 }
 
